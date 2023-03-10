@@ -1,27 +1,37 @@
 /*barra de navegacion*/
 .navbar {
   padding: 2rem;
-  background-color: #5897d6;
-  }
+  background: rgb(242, 251, 255);
+  background: linear-gradient(90deg, rgb(242, 251, 255) 0%, rgb(189, 207, 222) 100%);
+}
 
 .navbar-collapse {
   align-items: center;
   justify-content: space-between;
 }
+
+h3 {
+  background: rgb(34, 118, 195);
+  background: linear-gradient(0deg, rgb(34, 118, 195) 1%, rgb(121, 186, 218) 49%, rgb(154, 202, 222) 100%);
+}
+
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
 }
+/* --- fondo de pagina*/
+.fondo {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(208, 213, 217) 49%);
+}
 
 /*--- footer*/
 .footer {
   background-color: #9da7b1;
-  }
-
+}
 
 /* --- prueba carrusel de marcas*/
-
 .carrusel {
   align-items: center;
   background: #E3E3E3;
@@ -34,22 +44,18 @@
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-1750px);
   }
 }
-
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-1750px);
   }
 }
-
 .slider {
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -85,7 +91,7 @@
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: 3500px;
 }
 
 .slider .slide {
@@ -93,3 +99,4 @@
   width: 250px;
 }
 
+/*# sourceMappingURL=main.css.map */
