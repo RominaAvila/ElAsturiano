@@ -1,0 +1,86 @@
+$tama1: 200px;
+
+/*barra de navegacion*/
+
+.navbar {
+    padding: 2rem;
+    background: rgb(203,233,245);
+    background: linear-gradient(360deg, rgba(203,233,245,1) 1%, rgba(127,201,231,1) 40%, rgba(85,177,212,1) 81%, rgba(104,188,218,1) 100%);
+    }
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+li :hover {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(201, 152, 177, 0.404);
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: center;
+    }
+}
+
+/* --- fondo de pagina*/
+.fondo {
+   background: rgb(231,237,240);
+   background: linear-gradient(360deg, rgb(175, 148, 250) 0%, rgb(178, 113, 228) 29%, rgba(172,154,194,1) 62%, rgb(182, 141, 233) 100%);
+}
+    
+
+/* -- fonts -- */
+@font-face {
+    font-family: "Montserrat";
+    src: url(../media/fonts/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    font-family: "Montserrat";
+    color: white;
+}
+
+/* -- pagina de preguntas --*/
+.consul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    }
+/* -- video de pagina principal --*/
+
+#cabecera {
+    width: auto;
+    height: auto;
+}
+
+#video {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    }
+
+.index {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.boton {
+    width: $tama1;
+    height: 30px;
+}
+
+.text1 {
+    font-size: 400%;
+}
+
