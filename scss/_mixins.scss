@@ -1,0 +1,21 @@
+@mixin mixnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin foot1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(72,103,115);
+    background: linear-gradient(360deg, rgba(72,103,115,1) 15%, rgba(15,90,126,1) 58%, rgba(20,54,66,1) 100%);
+    }
+
+.mix1 {
+    @include mixnav;
+}
+
+.footer1 {
+    @include foot1;
+}
